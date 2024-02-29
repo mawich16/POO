@@ -6,13 +6,16 @@ import utils.UserInput;
 public class Ex31 {
     public static void main(String[] args) {
         int number = UserInput.intPositiveValue("please insert a positive number: ");
-        boolean result = UserInput.isPrimeNumber(number);
+        int sum = 0;
 
-        if (result == true) {
-            System.out.print("the insert number is prime");
+        for (int i=1; i<=number; i++) {
+            boolean result = UserInput.isPrimeNumber(i);
+
+            if (result == true) {
+                sum += i;
+            }
         }
-        else {
-            System.out.print("the insert number is not prime");
-        }
+
+        System.out.print("the sum of the prime numbers was " + sum);
     }
 }

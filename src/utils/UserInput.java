@@ -16,6 +16,8 @@ public class UserInput {
     }
 
 
+
+
     public static Integer intPositiveValue(String stringRequest) {
         Scanner sc = new Scanner(System.in);
         System.out.println(stringRequest);
@@ -27,6 +29,8 @@ public class UserInput {
         }
         return value;
     }
+
+
 
 
     public static Double MultipleOfThousand_PositiveValue(String stringRequest) {
@@ -44,8 +48,7 @@ public class UserInput {
 
 
 
-
-    public static Boolean isPrimeNumber(Integer number) {
+    public static Boolean isPrimeNumber(int number) {
         int j=0;
 
         for (int i=1; i<=number; i++) {
@@ -60,5 +63,16 @@ public class UserInput {
         else {
             return false;
         }
+    }
+
+
+
+
+    public static Double grades(double gradeT, double gradeP) {
+        double finalGrade;
+
+        finalGrade = 0.4 * gradeT + 0.6 * gradeP;
+
+        return finalGrade;
     }
 }

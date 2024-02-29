@@ -15,7 +15,7 @@ public class Ex28 {
             System.out.print("valor invalido. cateto B: ");
             catetoB = sc.nextDouble();
         }
-        double hipotenusaC = Math.sqrt(catetoA * catetoA + catetoB * catetoB);
+        double hipotenusaC = Math.sqrt((catetoA * catetoA) + (catetoB * catetoB));
         double anguloAC = Math.toDegrees(Math.atan(catetoB/catetoA));
         System.out.println("a hipotenusa é " + hipotenusaC + " e o angulo formado por A e C é " + anguloAC);
         sc.close();
