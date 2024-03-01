@@ -64,15 +64,4 @@ public class UserInput {
             return false;
         }
     }
-
-
-
-
-    public static Double grades(double gradeT, double gradeP) {
-        double finalGrade;
-
-        finalGrade = 0.4 * gradeT + 0.6 * gradeP;
-
-        return finalGrade;
-    }
 }
