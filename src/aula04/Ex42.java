@@ -1,5 +1,7 @@
 package aula04;
 
+import java.util.ArrayList;
+import java.util.List;
 
 class Product {
     private String name;
@@ -32,14 +34,26 @@ class Product {
 
 class CashRegister {
 
-    public CashRegister()
+    private List<Product> products;
 
-    public String[] addProduct() {
+    public CashRegister() {
+        products = new ArrayList<>();
+    }
 
-        
+    public void addProduct(Product product) {
+        products.add(product);
+    }
 
-        String[] registerList{name, price, getTotalValue()};
-
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(String.format("%-12s %-8s %-8s %-8s\n", "Product", "Price", "Quantity", "Total"));
+        double totalValue = 0.0;
+        for (Product product : products) {
+            sb.append(String.format("%-12s %5.2f %10d %6.2f\n", product.getName(), product.getPrice(), product.getQuantity(), product.getTotalValue()));
+            totalValue += product.getTotalValue();
+        }
+        sb.append("Total value: ").append(String.format("%.2f", totalValue));
+        return sb.toString();
     }
 
 }
@@ -56,7 +70,6 @@ public class Ex42 {
         cr.addProduct(new Product("Notebook", 19.99, 5));
         cr.addProduct(new Product("Phone case", 5.99, 1));
         
-        // TODO: Listar o conteúdo e valor total
         System.out.println(cr);
 
     }

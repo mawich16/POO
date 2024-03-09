@@ -15,11 +15,6 @@ public class Circle {
     }
 
 
-    public String toString() {
-        return "Circle: radius = " + radius;
-    }
-
-
     public void setRadius(double newRadius) {
         if (newRadius <= 0) {
             System.out.println("the value is invalid, negative or 0, it will be changed to 1");
@@ -42,6 +37,11 @@ public class Circle {
 
     public double Area() {
         return Math.PI * radius * radius;
+    }
+
+
+    public String toString() {
+        return "Circle: radius = " + radius + ", area = " + Area() + ", perimeter = " + Perimeter();
     }
 
 

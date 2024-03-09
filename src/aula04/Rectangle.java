@@ -24,7 +24,7 @@ public class Rectangle {
 
 
     public String toString() {
-        return "Rectangle: length = " + length + ", width = " + width;
+        return "Rectangle: length = " + length + ", width = " + width + ", area = " + Area() + ", perimeter = " + Perimeter();
     }
 
 
