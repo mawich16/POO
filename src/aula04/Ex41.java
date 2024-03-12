@@ -56,11 +56,11 @@ public class Ex41 {
                     break;
 
                 case 4:
-                System.out.println("Select your prefered option:");
-                System.out.println("1 - Compare circles");
-                System.out.println("2 - Compare triangles");
-                System.out.println("3 - Compare rectangles");
-                System.out.println("4 - Exit");
+                    System.out.println("Select your prefered option:");
+                    System.out.println("1 - Compare circles");
+                    System.out.println("2 - Compare triangles");
+                    System.out.println("3 - Compare rectangles");
+                    System.out.println("4 - Exit");
 
                 choice2 = sc.nextInt();
 
@@ -81,7 +81,7 @@ public class Ex41 {
                         System.out.println("");
                         break;
 
-                        case 2:
+                    case 2:
                         System.out.print("Insert first triangle side 1: ");
                         triangleSide1 = sc.nextDouble();
                         System.out.print("Insert first triangle side 2: ");
@@ -105,7 +105,7 @@ public class Ex41 {
                         System.out.println("");
                         break;
 
-                        case 3:
+                    case 3:
                         System.out.print("Insert first rectangle width: ");
                         rectangleWidth = sc.nextDouble();
                         System.out.print("Insert first rectangle length: ");
@@ -132,14 +132,14 @@ public class Ex41 {
                 break;
 
                 case 5:
-                sc.close();
-                System.exit(0);
-                break;
+                    sc.close();
+                    System.exit(0);
+                    break;
 
                 default:
-                System.out.println("Invalid option");
-                System.out.println("");
-                break;
+                    System.out.println("Invalid option");
+                    System.out.println("");
+                    break;
             }
         }
     }
