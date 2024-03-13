@@ -1,11 +1,12 @@
 package aula05;
 
+import java.util.Scanner;
 
 class DateYMD {
 
-    public int day, month, year, daysNumber;
+    Integer day, month, year, daysNumber;
 
-    public DateYMD(int day, int month, int year) {
+    public DateYMD(Integer day, Integer month, Integer year) {
         this.day = day;
         this.month = month;
         this.year = year;
@@ -87,7 +88,7 @@ class DateYMD {
 
     public void setDate(int newDay, int newMonth, int newYear) {
         if (validDate(newDay, newMonth, newYear) == false) {
-            System.out.println("invalid date ");
+            System.out.println("invalid date");
             day = 0;
             month = 0;
             year = 0;
@@ -109,12 +110,105 @@ class DateYMD {
     public Integer getYear() {
         return year;
     }
+
+    public void incrementDate(int day, int month, int year, int incrementDays) {
+        day += incrementDays;
+        
+        while (day > monthDays(month, year)) {
+            day -= monthDays(month, year);
+            month++;
+            if (month > 12) {
+                month = 1;
+                year++;
+            }
+        }
+    }
+
+    public void decrementDate(int day, int month, int year, int decrementDays) {
+        day -= decrementDays;
+        
+        while (day < 1) {
+            month--;
+            if (month < 1) {
+                month = 12;
+                year--;
+            }
+            day += monthDays(month, year);
+        }
+    }
+
+    public String toString() {
+        if (day == null || month == null ||  year == null) {
+            return "no date available";
+        }
+        else {
+            return "Date: " + year + "-" + month + "-" + day;
+        }
+    }
 }
 
 
-
-
-
 public class Ex51 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
+        Integer option, day, year, month, incrementDays, decrementDays;
+        String dateString;
+
+        day = null; month = null; year = null;
+        DateYMD date = new DateYMD(day, month, year);
+
+        while (true) {
+            System.out.println("Date operations:");
+            System.out.println("1 - create new date");
+            System.out.println("2 - show current date");
+            System.out.println("3 - increment date");
+            System.out.println("4 - decrement date");
+            System.out.println("0 - exit");
+            
+            option = sc.nextInt();
+            System.out.println("");
+
+
+            switch (option) {
+                case 1:
+                    System.out.println("introduce date in formate 'yyyy-mm-dd':");
+                    dateString = sc.next();
+                    System.out.println("");
+
+                    String[] dateParts = dateString.split("-");
+                    year = Integer.parseInt(dateParts[0]);
+                    month = Integer.parseInt(dateParts[1]);
+                    day = Integer.parseInt(dateParts[2]);
+
+                    date.setDate(day, month, year);
+                    break;
+
+                case 2:
+                    System.out.println(date.toString());
+                    System.out.println("");
+                    break;
+
+                case 3:
+                    System.out.println("introduce the number of days that you want to increment: ");
+                    incrementDays = sc.nextInt();
+                    date.incrementDate(day, month, year, incrementDays);
+                    System.out.println("final date:" + date.toString());
+                    System.out.println("");
+                    break;
+
+                case 4:
+                System.out.println("introduce the number of days that you want to decrement: ");
+                decrementDays = sc.nextInt();
+                date.incrementDate(day, month, year, decrementDays);
+                System.out.println("final date:" + date.toString());
+                System.out.println("");
+                break;
+
+                default:
+                System.exit(0);
+                    break;
+            }
+        }
+    }
 }

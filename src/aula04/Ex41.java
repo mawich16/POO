@@ -128,7 +128,6 @@ public class Ex41 {
                     default:
                     break;
                 }
-
                 break;
 
                 case 5:
