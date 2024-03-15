@@ -11,16 +11,6 @@ public class DateYMD {
         this.year = year;
     }
 
-    public DateYMD(int year, int startDayOfYear) {
-        this.year = year;
-        this.startDayOfYear = startDayOfYear;
-    }
-
-    public DateYMD(int month, int startDayOfMonth) {
-        this.month = month;
-        this.startDayOfMonth = startDayOfMonth;
-    }
-
     public Boolean validMonth(int month) {
         if (this.month <= 12 && this.month >= 1) {
             return true;
@@ -30,7 +20,7 @@ public class DateYMD {
         }
     }
 
-    private String monthName(int month) {
+    public String monthName(int month) {
         String[] monthsList = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
 		String monthName = monthsList[month-1];
 		return monthName;
@@ -118,16 +108,6 @@ public class DateYMD {
             return "valid date";
     }
 
-    public void setStartDayOfMonth(int newStartOfMonth) {
-        if (newStartOfMonth <=7 && newStartOfMonth >=1) {
-            this.startDayOfMonth = newStartOfMonth;
-        }
-        else {
-            System.out.println("invalid day, has default it will be set to 1");
-            this.startDayOfMonth = 1;
-        }
-    }
-
     public int getDay() {
         return day;
     }
@@ -138,22 +118,6 @@ public class DateYMD {
 
     public int getYear() {
         return year;
-    }
-
-    public String firstWeekdayOfYear() {
-        String[] weekdayList = {"Monday", "Tuesday", "Wendnesday","Thersday", "Friday", "Saturday", "Sunday"};
-		startDayOfYearName = weekdayList[startDayOfYear-1];
-		return startDayOfYearName;
-    }
-
-    public String firstWeekdayOfMonth() {
-        String[] weekdayList = {"Monday", "Tuesday", "Wendnesday","Thersday", "Friday", "Saturday", "Sunday"};
-		startDayOfMonthName = weekdayList[startDayOfMonth-1];
-		return startDayOfMonthName;
-    }
-
-    public String firstWeekdayOfMonth(int month) {
-        return "por fazer";
     }
 
     public void incrementDate(int day, int month, int year, int incrementDays) {
@@ -188,52 +152,6 @@ public class DateYMD {
         }
         else {
             return "Date: " + year + "-" + month + "-" + day;
-        }
-    }
-
-    public void toStringYear() {
-        for (int month=1; month<=12; month++) {
-            daysNumber = monthDays(month, year);
-            monthName = monthName(month);
-
-            System.out.printf("%12s %-10s\n", monthName, year);
-            System.out.printf("%3s%3s%3s%3s%3s%3s%3s", "Su", "Mo", "Tu", "We", "Th", "Fr", "Sa");
-
-            startDayOfYear--;
-
-            if (startDayOfYear != 0) {
-            String s = "%n%" + 3*startDayOfYear + "s";
-            System.out.printf(s,"");
-            }
-            for (int i=1; i<=daysNumber; i++) {
-                if (startDayOfYear % 7 == 0) {
-                    System.out.print("\n");
-                }
-                System.out.printf("%3d",i);
-                startDayOfYear++;
-            }
-        }
-    }
-
-    public void printMonth(int month) {
-        daysNumber = monthDays(month, year);
-        monthName = monthName(month);
-
-        System.out.printf("%12s %-10s\n", monthName, year);
-        System.out.printf("%3s%3s%3s%3s%3s%3s%3s", "Su", "Mo", "Tu", "We", "Th", "Fr", "Sa");
-
-        startDayOfMonth--;
-
-        if (startDayOfMonth != 0) {
-            String s = "%n%" + 3*startDayOfMonth + "s";
-            System.out.printf(s,"");
-        }
-        for (int i=1; i<=daysNumber; i++) {
-            if (startDayOfMonth % 7 == 0) {
-                System.out.print("\n");
-            }
-            System.out.printf("%3d",i);
-            startDayOfMonth++;
         }
     }
 
