@@ -1,14 +1,18 @@
 package aula05;
 
+import java.time.LocalDate;
+
 public class DateYMD {
 
     int day, month, year, daysNumber, startDayOfYear, startDayOfMonth;
     String monthName, startDayOfYearName, startDayOfMonthName;
 
     public DateYMD(int day, int month, int year) {
-        this.day = day;
-        this.month = month;
-        this.year = year;
+        if (validDate(day, month, year) == true) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
     }
 
     public Boolean validMonth(int month) {
@@ -154,6 +158,12 @@ public class DateYMD {
             return "Date: " + year + "-" + month + "-" + day;
         }
     }
+
+    public static DateYMD now() {
+        LocalDate date = LocalDate.now();
+        return new DateYMD(date.getDayOfMonth(), date.getMonthValue(), date.getYear());
+    }
+
 
 }
 

@@ -144,12 +144,11 @@ public class Calendar {
         System.out.println(" Su  Mo  Tu  We  Th  Fr  Sa");
     
         int startDayOfMonth = firstWeekdayOfMonth(month, startDayOfYear, year);
+        int[][] eventList = events(day, month, year);
 
         for (int i = 0; i < startDayOfMonth; i++) {
             System.out.print("    ");
         }
-
-        int[][] eventList = events(day, month, year);
 
         for (int day = 1; day <= daysNumber; day++) {
             if (eventList[month-1][day-1] != 0) {
