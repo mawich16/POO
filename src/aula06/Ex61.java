@@ -12,7 +12,7 @@ public class Ex61 {
         bls.setBolsa(1050);
         System.out.println("Aluno: " + al.getNome());
         System.out.println(al);
-    
+
         System.out.println("Bolseiro: " + bls.getNome() + ", NMec: " + bls.getNMec() + ", Bolsa: " + bls.getBolsa() + ", Orientador: " +
         bls.getOrientador());
         System.out.println(bls);

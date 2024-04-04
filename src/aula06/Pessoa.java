@@ -9,15 +9,15 @@ public class Pessoa {
 
     public Pessoa(String nome, int cc, DateYMD dataNasc) {
         if (nome == null || nome.length() == 0) {
-            System.out.println("o  nome não pode estar vazio, ciar novamente");
+            throw new IllegalArgumentException("o  nome não pode estar vazio");
         }
 
         if (cc == 0 || cc < 0) {
-            System.out.println("o  numero de cc não pode ser 0 ou negativo, ciar novamente");
+            throw new IllegalArgumentException("o  numero de cc não pode ser 0 ou negativo, ciar novamente");
         }
 
         if (dataNasc == null) {
-            System.out.println("a data de nascimento nao pode vazia, ciar novamente");
+            throw new IllegalArgumentException("a data de nascimento nao pode vazia, ciar novamente");
         }
 
         this.nome = nome;
@@ -55,11 +55,13 @@ public class Pessoa {
 
     @Override
     public String toString() {
-        return String.format("s%; CC: %d; Data de Nascimento: %d/%d/%d",
+        return String.format("%s; CC: %d; Data de Nascimento: %d/%d/%d",
         this.nome,
         this.cc,
-        this.dataNasc.getDay(), +
+        this.dataNasc.getDay(),
         this.dataNasc.getMonth(),
         this.dataNasc.getYear());
     }
+
+    
 }
