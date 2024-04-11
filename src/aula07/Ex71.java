@@ -1,16 +1,20 @@
 package aula07;
 
+import java.util.ArrayList;
 import java.util.Scanner;
+
+import utils.UserInput;
 
 public class Ex71 {
 
+    private static ArrayList<Shape> shapes = new ArrayList();
     public static void main(String[] args) {
-        
+
         Scanner sc = new Scanner(System.in);
 
         int choice1, choice2;
         double circleRadius, rectangleWidth, rectangleLength, triangleSide1, triangleSide2, triangleSide3;
-        String circleColor;
+        String circleColor, triangleColor, rectangleColor;
 
         while (true) {
 
@@ -18,7 +22,7 @@ public class Ex71 {
             System.out.println("1 - Create a new circle");
             System.out.println("2 - Create a new triangle");
             System.out.println("3 - Create a new rectangle");
-            System.out.println("4 - Other options");
+            System.out.println("4 - Compare shapes");
             System.out.println("5 - Exit");
 
             choice1 = sc.nextInt();
@@ -32,6 +36,7 @@ public class Ex71 {
                     System.out.print("Insert circle color: ");
                     circleColor = sc.next();
                     Circle c1 = new Circle(circleRadius,circleColor);
+                    addShape(c1);
                     System.out.println(c1.toString());
                     System.out.println("");
                     break;
@@ -43,7 +48,10 @@ public class Ex71 {
                     triangleSide2 = sc.nextDouble();
                     System.out.print("Insert triangle side 3: ");
                     triangleSide3 = sc.nextDouble();
-                    Triangle t1 = new Triangle(triangleSide1, triangleSide2, triangleSide3);
+                    System.out.print("Insert triangle color: ");
+                    triangleColor = sc.next();
+                    Triangle t1 = new Triangle(triangleSide1, triangleSide2, triangleSide3, triangleColor);
+                    addShape(t1);
                     System.out.println(t1.toString());
                     System.out.println("");
                     break;
@@ -53,84 +61,31 @@ public class Ex71 {
                     rectangleWidth = sc.nextDouble();
                     System.out.print("Insert rectangle length: ");
                     rectangleLength = sc.nextDouble();
-                    Rectangle r1 = new Rectangle(rectangleLength, rectangleWidth);
+                    System.out.print("Insert rectangle color: ");
+                    rectangleColor = sc.next();
+                    Rectangle r1 = new Rectangle(rectangleLength, rectangleWidth, rectangleColor);
+                    addShape(r1);
                     System.out.println(r1.toString());
                     System.out.println("");
                     break;
 
                 case 4:
-                    System.out.println("Select your prefered option:");
-                    System.out.println("1 - Compare circles");
-                    System.out.println("2 - Compare triangles");
-                    System.out.println("3 - Compare rectangles");
-                    System.out.println("4 - Exit");
-
-                choice2 = sc.nextInt();
-
-                switch (choice2) {
-                    case 1:
-                        System.out.print("Insert first circle radius: ");
-                        circleRadius = sc.nextDouble();
-                        Circle c2 = new Circle(circleRadius);
-                        System.out.print("Insert second circle radius: ");
-                        circleRadius = sc.nextDouble();
-                        Circle c3 = new Circle(circleRadius);
-                        if (c2.equals(c3) == true) {
-                            System.out.println("The circles are equal");
-                        }
-                        else {
-                            System.out.println("The circles are not equal");
-                        }
-                        System.out.println("");
-                        break;
-
-                    case 2:
-                        System.out.print("Insert first triangle side 1: ");
-                        triangleSide1 = sc.nextDouble();
-                        System.out.print("Insert first triangle side 2: ");
-                        triangleSide2 = sc.nextDouble();
-                        System.out.print("Insert first triangle side 3: ");
-                        triangleSide3 = sc.nextDouble();
-                        Triangle t2 = new Triangle(triangleSide1, triangleSide2, triangleSide3);
-                        System.out.print("Insert second triangle side 1: ");
-                        triangleSide1 = sc.nextDouble();
-                        System.out.print("Insert second triangle side 2: ");
-                        triangleSide2 = sc.nextDouble();
-                        System.out.print("Insert second triangle side 3: ");
-                        triangleSide3 = sc.nextDouble();
-                        Triangle t3 = new Triangle(triangleSide1, triangleSide2, triangleSide3);
-                        if (t2.equals(t3) == true) {
-                            System.out.println("The triangles are equal");
-                        }
-                        else {
-                            System.out.println("The triangles are not equal");
-                        }
-                        System.out.println("");
-                        break;
-
-                    case 3:
-                        System.out.print("Insert first rectangle width: ");
-                        rectangleWidth = sc.nextDouble();
-                        System.out.print("Insert first rectangle length: ");
-                        rectangleLength = sc.nextDouble();
-                        Rectangle r2 = new Rectangle(rectangleLength, rectangleWidth);
-                        System.out.print("Insert second rectangle width: ");
-                        rectangleWidth = sc.nextDouble();
-                        System.out.print("Insert second rectangle length: ");
-                        rectangleLength = sc.nextDouble();
-                        Rectangle r3 = new Rectangle(rectangleLength, rectangleWidth);
-                        if (r2.equals(r3) == true) {
-                            System.out.println("The rectangles are equal");
-                        }
-                        else {
-                            System.out.println("The rectangles are not equal");
-                        }
-                        System.out.println("");
-                        break;
-                
-                    default:
-                    break;
+                if (shapes.size() == 0) {
+                    System.out.println("First insert shapes");
+                    continue;
                 }
+                int index = 1, index1, index2;
+                for (Shape i : shapes) {
+                    System.out.println("index: " + index + " shape: " + i);
+                    index++;
+                }
+                System.out.println("Insert first shape index: ");
+                index1 = sc.nextInt();
+                Shape shape1 = shapes.get[index1];
+                System.out.println("Insert second shape index: ");
+                index2 = sc.nextInt();
+                Shape shape2 = shapes.get[index2];
+                System.out.println(shape1.equals(shape2));
                 break;
 
                 case 5:
@@ -145,4 +100,17 @@ public class Ex71 {
             }
         }
     }
+
+    private static void addShape(Shape shape) {
+        int index = shapes.size();
+        shapes.add(shape);
+        System.out.printf("Shape added with index %d\n", index);
+    }
+
+    private static Shape promptShape(String prompt) {
+        int index = UserInput.promptIntRange(prompt, 0, shapes.size() - 1);
+        return shapes.get(index);
+    }
+
+    
 }
