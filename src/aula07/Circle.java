@@ -42,17 +42,17 @@ public class Circle extends Shape {
 
 
     public String toString() {
-        return "Circle: radius = " + radius + ", area = " + Area() + ", perimeter = " + Perimeter();
+        return "Circle: radius = " + radius + ", area = " + Area() + ", perimeter = " + Perimeter() + super.toString();
     }
 
 
-    public boolean equals(Object obj) {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
+    public boolean equals(Shape shape) {
+        if (this == shape) return true;
+        if (shape == null || getClass() != shape.getClass()) return false;
 
-        Circle circle = (Circle) obj;
+        Circle circle = (Circle) shape;
 
-        return super.equals(obj) == true && circle.radius == this.radius;
+        return super.equals(shape) == true && circle.radius == this.radius;
     }
 
 }

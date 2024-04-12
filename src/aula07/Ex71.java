@@ -3,8 +3,6 @@ package aula07;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import utils.UserInput;
-
 public class Ex71 {
 
     private static ArrayList<Shape> shapes = new ArrayList();
@@ -80,12 +78,13 @@ public class Ex71 {
                     index++;
                 }
                 System.out.println("Insert first shape index: ");
-                index1 = sc.nextInt();
-                Shape shape1 = shapes.get[index1];
+                index1 = sc.nextInt() - 1;
+                Shape shape1 = shapes.get(index1);
                 System.out.println("Insert second shape index: ");
-                index2 = sc.nextInt();
-                Shape shape2 = shapes.get[index2];
+                index2 = sc.nextInt() - 1;
+                Shape shape2 = shapes.get(index2);
                 System.out.println(shape1.equals(shape2));
+                System.out.println("");
                 break;
 
                 case 5:
@@ -102,15 +101,9 @@ public class Ex71 {
     }
 
     private static void addShape(Shape shape) {
-        int index = shapes.size();
+        int index = shapes.size() + 1;
         shapes.add(shape);
         System.out.printf("Shape added with index %d\n", index);
     }
 
-    private static Shape promptShape(String prompt) {
-        int index = UserInput.promptIntRange(prompt, 0, shapes.size() - 1);
-        return shapes.get(index);
-    }
-
-    
 }

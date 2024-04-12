@@ -25,7 +25,7 @@ public class Rectangle extends Shape {
 
 
     public String toString() {
-        return "Rectangle: length = " + length + ", width = " + width + ", area = " + Area() + ", perimeter = " + Perimeter();
+        return "Rectangle: length = " + length + ", width = " + width + ", area = " + Area() + ", perimeter = " + Perimeter() + super.toString();
     }
 
 

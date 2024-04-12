@@ -23,6 +23,10 @@ public abstract class Shape {
         this.color = color;
     }
 
+    public String toString() {
+        return ", color = " + color;
+    }
+
     public boolean equals(Object obj) {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
