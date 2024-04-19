@@ -1,5 +1,7 @@
 package aula06;
 
+import java.util.Objects;
+
 import aula05.DateYMD;
 
 public class Pessoa {
@@ -61,6 +63,10 @@ public class Pessoa {
         this.dataNasc.getDay(),
         this.dataNasc.getMonth(),
         this.dataNasc.getYear());
+    }
+
+    public int hashCode() {
+        return Objects.hash(cc);
     }
 
     
