@@ -2,6 +2,7 @@ package aula10;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.TreeMap;
 
 public class Ex102 {
@@ -19,6 +20,12 @@ public class Ex102 {
         l.add(book);
     }
 
+    public static void randomBook(String genero){
+        Random rand = new Random();
+        int randomBook = rand.nextInt(library.get(genero).size());
+        System.out.println("Random book: "+library.get(genero).get(randomBook));
+    }
+
     public static void main(String[] args) {
 
         //add
@@ -30,7 +37,7 @@ public class Ex102 {
         addBook("desporto", new Book("Corrida","ana",2025));
 
 
-        //alter ?
+        //alter
         addBook("desporto", new Book("Maratoa","mariana",2030));
 
         //remove
@@ -39,12 +46,8 @@ public class Ex102 {
         //toString
         System.out.println(library);
 
-
-        public static Book getRandomBook(Sting genero) {
-            List <Book> l = library.get(genero);
-            int i = Math.random(0,l.size());
-            return l[i];
-        }
+        //random
+        randomBook("fantasia");
 
     }
 }
