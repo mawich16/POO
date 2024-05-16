@@ -1,4 +1,5 @@
 package aula10;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -29,7 +30,7 @@ public class Ex104 {
             System.out.println("Palavras do ficheiro terminadas em 's': ");
             for (String palavra: palavras) {
                 if (palavra.toLowerCase().endsWith("s")) {
-                    System.out.print(palavra + " | ");
+                    System.out.print(palavra + " - ");
                 }
             }
 
@@ -37,7 +38,7 @@ public class Ex104 {
             System.out.println("\nPalavras com mais do que 2 caracteres terminadas em 's': ");
             for (String palavra: maisDoQue2) {
                 if (palavra.toLowerCase().endsWith("s")) {
-                    System.out.print(palavra + " | ");
+                    System.out.print(palavra + " - ");
                 }
             }
 
@@ -56,9 +57,11 @@ public class Ex104 {
             }
 
             System.out.println();
-            System.out.println();
 
             System.out.println("Palavras que contêm apenas letras: " + maisDoQue2);
         }
+        catch (FileNotFoundException e){
+        System.out.println("ficheiro não encontrado");;
+    }
     }
 }
