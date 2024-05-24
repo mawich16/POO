@@ -1,0 +1,96 @@
+
+-------------------------
+
+2: 202: 1
+
+-------------------------
+
+a: adorável: 1, agrícola: 1, alentejo: 1, algibebes: 1, altas: 1, altos: 1, amara: 1, amarela: 1, amigo: 1, amou: 1, andas: 1, apanhou: 1, apesar: 2, aquele: 2, aqui: 1, arga: 1, através: 1, aturdido: 1, até: 2, avô: 1
+
+-------------------------
+
+b: baetão: 1, baixo: 2, barrigudo: 1, beiras: 1, belém: 1, bengala: 2, boa: 1, bom: 1, botas: 1, botequim: 1, botica: 1
+
+-------------------------
+
+c: campos: 2, casa: 2, casaco: 1, casca: 1, castão: 1, cento: 1, cepa: 1, cerrados: 1, chamavam: 1, cinco: 1, cobriam: 1, colina: 1, com: 2, como: 2, contos: 1, corria: 1, cortiça: 1
+
+-------------------------
+
+d: damascos: 1, das: 1, delimitavam: 1, demorando: 1, densas: 1, depois: 1, desabou: 1, descendo: 1, desde: 2, desejado: 1, deslumbrado: 1, desta: 1, desterro: 1, deus: 1, devoto: 1, dinis: 1, douro: 1, duas: 1
+
+-------------------------
+
+e: elrei: 1, elísios: 1, enfeitado: 1, enorme: 1, enquanto: 1, entre: 1, entulhava: 1, era: 1, erguido: 1, escanhoado: 1, escorregou: 1, essa: 1, estas: 1, estradas: 1, estremadura: 1
+
+-------------------------
+
+f: família: 1, fartas: 1, foro: 1, força: 1, fácil: 1
+
+-------------------------
+
+g: galhofando: 1, galião»: 1, gemer: 1, gordíssimo: 1, grosso: 1, grão: 1, guloso: 1
+
+-------------------------
+
+h: habitara: 1, homem: 1, horas: 1, horta: 1
+
+-------------------------
+
+i: infante: 3
+
+-------------------------
+
+j: jacinto: 6
+
+-------------------------
+
+l: lajedo: 1, laranja: 1, levantou: 1, lhe: 2, lisboa: 1, lixo: 2, léguas: 1
+
+-------------------------
+
+m: magnânimas: 1, mar: 1, maria: 1, mas: 1, meu: 1, miguel: 1, momento: 1, moreno: 1, muro: 1, muros: 1, mãos: 1
+
+-------------------------
+
+n: nascera: 1, nasceu: 1, negrejavam: 1, nele: 1, nesse: 1, nobre: 1, nos: 2, nove: 1, num: 1, numa: 1, nunca: 1
+
+-------------------------
+
+o: olhos: 1, olival: 1, onde: 2, ondulando: 1, ouro: 1
+
+-------------------------
+
+p: pagava: 1, palmitos: 1, palácio: 2, pampulha: 1, para: 1, paris: 1, parreira: 1, pedra: 1, pedras: 1, pela: 2, pelas: 1, pendurou: 1, penou: 1, pestanudos: 1, picador: 1, pinheirais: 1, plantava: 1, plácido: 1, por: 3, portinha: 1, pretos: 1
+
+-------------------------
+
+q: que: 6, quem: 1, quinta: 1, quintal: 1
+
+-------------------------
+
+r: reais: 1, rebolar: 1, reconheceu: 1, regresso: 1, renda: 1, rente: 1, retrato: 1, retábulo: 1, ribeiras: 1, riquíssimo: 1, rolara: 1
+
+-------------------------
+
+s: sacudido: 1, sala: 1, salvador»: 1, saudades: 1, saía: 1, sebes: 1, sege: 1, semeadura: 1, sempre: 1, senhor: 2, senhorial: 1, serra: 1, seu: 3, seus: 1, sobre: 1, sua: 3
+
+-------------------------
+
+t: tarde: 2, tempos: 1, terras: 1, tinham: 1, tinhela: 1, todo: 1, toldava: 1, tormes: 1, torrão: 1, trabuqueta: 1, tramar: 1, travessa: 1, tua: 1, tão: 2
+
+-------------------------
+
+u: uma: 4
+
+-------------------------
+
+v: vale: 1, velha: 1, ventre: 1, verde: 1, viena: 1, vinhedo: 1
+
+-------------------------
+
+«: «anjinho»: 2, «galião»: 1, «seu: 1
+
+-------------------------
+
+â: âncora: 1
