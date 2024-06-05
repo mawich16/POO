@@ -1,0 +1,127 @@
+
+Alínea 1) ----------------------------------
+
+### There is already an event occurring at this place and time!
+** No more tickets available for event 1000
+** No more tickets available for event 1001
+** No more tickets available for event 1002
+** No more tickets available for event 1003
+** No more tickets available for event 1004
+** No more tickets available for event 1005
+** No more tickets available for event 1006
+** No more tickets available for event 1007
+** No more tickets available for event 1008
+** No more tickets available for event 1009
+** No more tickets available for event 1010
+** No more tickets available for event 1011
+** No more tickets available for event 1000
+** No more tickets available for event 1001
+** No more tickets available for event 1002
+** No more tickets available for event 1003
+** No more tickets available for event 1004
+** No more tickets available for event 1005
+** No more tickets available for event 1006
+** No more tickets available for event 1007
+** No more tickets available for event 1008
+** No more tickets available for event 1009
+** No more tickets available for event 1010
+** No more tickets available for event 1011
+** No more tickets available for event 1000
+** No more tickets available for event 1001
+** No more tickets available for event 1002
+** No more tickets available for event 1003
+** No more tickets available for event 1004
+** No more tickets available for event 1005
+** No more tickets available for event 1006
+** No more tickets available for event 1007
+** No more tickets available for event 1008
+** No more tickets available for event 1009
+** No more tickets available for event 1010
+** No more tickets available for event 1011
+** No more tickets available for event 1000
+** No more tickets available for event 1001
+** No more tickets available for event 1002
+** No more tickets available for event 1003
+** No more tickets available for event 1004
+** No more tickets available for event 1005
+** No more tickets available for event 1006
+** No more tickets available for event 1007
+** No more tickets available for event 1008
+** No more tickets available for event 1009
+** No more tickets available for event 1010
+** No more tickets available for event 1011
+** No more tickets available for event 1000
+** No more tickets available for event 1001
+** No more tickets available for event 1002
+** No more tickets available for event 1003
+** No more tickets available for event 1004
+** No more tickets available for event 1005
+** No more tickets available for event 1006
+** No more tickets available for event 1007
+** No more tickets available for event 1008
+** No more tickets available for event 1009
+** No more tickets available for event 1010
+** No more tickets available for event 1011
+** No more tickets available for event 1000
+** No more tickets available for event 1001
+** No more tickets available for event 1002
+** No more tickets available for event 1003
+** No more tickets available for event 1004
+** No more tickets available for event 1005
+** No more tickets available for event 1006
+** No more tickets available for event 1007
+** No more tickets available for event 1008
+** No more tickets available for event 1009
+** No more tickets available for event 1010
+** No more tickets available for event 1011
+** No more tickets available for event 1000
+** No more tickets available for event 1001
+** No more tickets available for event 1002
+** No more tickets available for event 1003
+** No more tickets available for event 1004
+** No more tickets available for event 1005
+** No more tickets available for event 1006
+** No more tickets available for event 1007
+** No more tickets available for event 1008
+** No more tickets available for event 1009
+** No more tickets available for event 1010
+** No more tickets available for event 1011
+** No more tickets available for event 1000
+** No more tickets available for event 1001
+** No more tickets available for event 1002
+** No more tickets available for event 1003
+** No more tickets available for event 1004
+** No more tickets available for event 1005
+** No more tickets available for event 1006
+** No more tickets available for event 1007
+** No more tickets available for event 1008
+** No more tickets available for event 1009
+** No more tickets available for event 1010
+** No more tickets available for event 1011
+** No more tickets available for event 1000
+** No more tickets available for event 1001
+** No more tickets available for event 1002
+** No more tickets available for event 1003
+event:name:Esperanza Spalding, duration: 75, artist: A Tribute to Nina Simone, place: name:The Black Box, capacidade: 70, schedule: 2024-06-28 18:30
+event:name:The Importance of Being Earnest, duration: 150, companhia: Grand Theatre Company, ator: Oscar Wilde, place: name:Riverside Theatre, capacidade: 100, schedule: 2024-06-12 20:45
+event:name:The Ballad of Black Bart, duration: 90, companhia: Riverbank Community Players, ator: Maria Hernandez, place: name:City Lights Cinema, capacidade: 150, schedule: 2024-06-17 19:00
+event:name:The Maltese Falcon, duration: 100, realizador: John Huston, ano: 1941atores: [Ljava.lang.String;@27973e9b, place: name:Central Park Bandshell, capacidade: 200, schedule: 2024-06-25 21:15
+event:name:The Invisible Thread, duration: 90, realizador: David Choi, ano: 2023atores: [Ljava.lang.String;@312b1dae, place: name:The Black Box, capacidade: 70, schedule: 2024-06-29 18:00
+event:name:Thunderous, duration: 90, artist: Neon Pulse Tour, place: name:Riverside Theatre, capacidade: 100, schedule: 2024-06-14 18:30
+event:name:Esperanza Spalding, duration: 75, artist: A Tribute to Nina Simone, place: name:City Lights Cinema, capacidade: 150, schedule: 2024-06-10 20:15
+event:name:The Importance of Being Earnest, duration: 150, companhia: Grand Theatre Company, ator: Oscar Wilde, place: name:Central Park Bandshell, capacidade: 200, schedule: 2024-06-22 19:30
+event:name:The Ballad of Black Bart, duration: 90, companhia: Riverbank Community Players, ator: Maria Hernandez, place: name:The Black Box, capacidade: 70, schedule: 2024-06-19 21:00
+event:name:The Maltese Falcon, duration: 100, realizador: John Huston, ano: 1941atores: [Ljava.lang.String;@27973e9b, place: name:Riverside Theatre, capacidade: 100, schedule: 2024-06-20 18:45
+event:name:The Invisible Thread, duration: 90, realizador: David Choi, ano: 2023atores: [Ljava.lang.String;@312b1dae, place: name:City Lights Cinema, capacidade: 150, schedule: 2024-06-11 22:00
+event:name:Thunderous, duration: 90, artist: Neon Pulse Tour, place: name:Central Park Bandshell, capacidade: 200, schedule: 2024-06-23 19:30
+
+
+Alínea 2) ----------------------------------
+
+
+Finished reading file.
+
+
+** First 10 available events, sorted by date:
+
+** Number of tickets sold by event type:
